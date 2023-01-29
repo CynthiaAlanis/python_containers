@@ -1,6 +1,6 @@
 # ---------------Exercise 1--------------------
 # Create a list named students containing some student names (strings).
-students = [ 'Fred','Tom','Ben']
+students = [ 'Fred','Tom','Ben','Cynthia']
 # Print out the second student's name.
 print(students[1])
 # Print out the last student's name.
@@ -32,14 +32,19 @@ home_town = {
 
 print( f'I was born in {home_town["city"]}, {home_town["state"]}- population of {home_town["population"]}')
 
-#------------------Exercise 5-----------------------
+#----------------Exercise 5-----------------------
 # Iterate over the key: value pairs in home_town and print a string for each item, for example:
 for key, val in home_town.items():
  print( f'The {key} I live in is {val}')
  
  
-#---------------Exercize--------------------
+#---------------Exercise 6--------------------
 #  Create an empty list named cohort.
 # Using a forloop, add one dictionary to the cohortlist for each student name. Each dictionary should have this shape:
-cohort = ['Ben','Ted', 'Tom', 'Dave']
+cohort = []
+for i in range(len(info)):
+  cohort.append({'student':info[i],'fav_food':info[i]})
+
+print(cohort)
+
 
