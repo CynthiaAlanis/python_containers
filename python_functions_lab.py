@@ -25,12 +25,11 @@ maxValue = max(list2)
 print(maxValue)
 
 # 3. Write a function named occurances that takes two string arguments as input and counts the number of occurances of the second string inside the first string.
-def occurances(str,sub):
-  counts = 0
-  for i in range( len(str)):
-    if str[i:].startswith(sub):
-      counts = counts + 1
-      return counts
+def occurances(x,y):
+  count = 0
+  
+ return occurances.count(x == y)
+
 print(occurances('fleep floop', 'e'))  # returns 2
 print(occurances('fleep floop', 'p'))  # returns 2
 print(occurances('fleep floop', 'ee')) # returns 1
