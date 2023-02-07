@@ -16,7 +16,10 @@ else:
 #      - The letter x is a consonant
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
-
+if letter in letters:
+  print(f"The Letter {letter} is a Vowel")
+else:
+  print(f"The Letter {letter} is a Consonant")
 
 
 # exercise-02 Length of Phrase
@@ -27,8 +30,8 @@ else:
 phrase = input("Please enter a word or phrase:")
 # 2. Print the following message:
 #      - What you entered is xx characters long
-length = print(len(phrase))
-print("What you entered is {length} long")
+
+print(f"What you entered is {len(phrase)} characters")
 # 3. Return to step 1, unless the word 'quit' was entered.
 
 
@@ -37,30 +40,46 @@ print("What you entered is {length} long")
 # Write the code that:
 # 1. Prompts the user to enter a dog's age in human years like this:
 #      Input a dog's age in human years:
+dogsAge = input('Enter a dogs age in human year')
+dogsAge = int(dogsAge)
 # 2. Calculates the equivalent dog years, where:
 #      - The first two years count as 10 years each
 #      - Any remaining years count as 7 years each
+if dogsAge <= 2:
+  dog_years = dogsAge *10
+else:
+  dog_years = ((dogsAge - 2) * 7) + 20
 # 3. Prints the answer in the following format:
 #      The dog's age in dog years is xx
 # Hint:  Use the int() function to convert the string returned from input() into an integer
-
+print(f"The dogs age in years is {dog_years}")
 
 # exercise-04 What kind of Triangle?
 
 # Write the code that:
 # 1. Prompts the user to enter the three lengths of a triangle (one at a time):
 #      Enter the lengths of three side of a triangle:
-#      a:
+#      a: 
 #      b:
 #      c:
+a = input('Enter side 1 : ')
+b = input('Enter side 2 : ')
+c = input('Enter side 3 : ')
+
 # 2. Write the code that determines if the triangle is:
 #      equalateral - all three sides are equal in length
 #      scalene - all three sides are unequal in length
 #      isosceles - two sides are the same length
+
+
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
-
-
+if a == b and b == c:
+  print(f'A triangle with sides of {a}, {b} & {c} is a equalateral triangle')
+elif a == b or b== c or c == a:
+  print(f'A triangle with sides of {a}, {b} & {c} is a scalene isosceles triangle') 
+else:
+  print(f'A triangle with sides of {a}, {b} & {c} is a scalene triangle') 
 
 # exercise-05 Fibonacci sequence for first 50 terms
 

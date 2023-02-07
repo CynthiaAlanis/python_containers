@@ -26,9 +26,9 @@ print(maxValue)
 
 # 3. Write a function named occurances that takes two string arguments as input and counts the number of occurances of the second string inside the first string.
 def occurances(x,y):
-  count = 0
   
- return occurances.count(x == y)
+ return x.count(y)
+  
 
 print(occurances('fleep floop', 'e'))  # returns 2
 print(occurances('fleep floop', 'p'))  # returns 2
